@@ -1,0 +1,42 @@
+.youtubeCard {
+  width: 300px;
+  transition: all 0.5s;
+  padding: 1vmax;
+  margin: 2vmax;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  -webkit-border-radius: 35px !important;
+  border-radius: 35px !important;
+  background: #333333 !important;
+  -webkit-box-shadow: 5px 5px 0px #665f5f, -5px -5px 0px #ffffff !important;
+  box-shadow: 5px 5px 0px #665f5f, -5px -5px 0px #ffffff !important;
+  animation: scrollPop 0.8s ease-in infinite alternate !important;
+
+
+}
+.youtubeCard > a {
+  color:  #ffffff !important;
+  font-size: 4em;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-shadow: -6px 6px 15px rgba(243, 243, 243, 0.5), 
+               6px -2px 10px rgba(230, 103, 103, 0.8);
+  position: relative;
+}
+
+.youtubeCard img {
+  width: inherit;
+}
+
+.youtubeCard:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
+}
+
+@media screen and (max-width: 600px) {
+  .youtubeCard {
+    width: 200px;
+  }
+}
